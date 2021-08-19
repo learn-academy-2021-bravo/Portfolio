@@ -5,37 +5,38 @@
 
 body{
   font-family: Arial, Helvetica, sans-serif;
-  background-position:unset;
+  /* background-position:unset; */
   /* background-image: url('https://images.unsplash.com/photo-1544411047-c491e34a24e0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80'); */
-  background: rgb(23, 23, 23);
+  background: rgb(133, 133, 133);
   /* background-blend-mode: screen; */
   color: rgb(255, 255, 255);
   line-height: 1.6;
   height: 100vh;
+  /* width:100vw; */
   overflow: hidden;
 }
 
 
 
-.container {
+.main {
   width: 100%;
   height: 100%;
   overflow-y: scroll;
   scroll-behavior: smooth;
-  /* scroll-snap-type: y mandatory; */
+  scroll-snap-type: y mandatory;
 }
 
 
 
-h1{
+h3{
   position: relative;
 }
 
-h1::after {
+h3::after {
   content: '';
   position:absolute;
   right:0;
-  top:0;
+  bottom:0;
   width:100%;
   height:2px;
   background:rgb(147, 116, 50);
@@ -45,7 +46,7 @@ h1::after {
   transition: transform 250ms ease-in;
 }
 
-h1:hover::after{
+h3:hover::after{
   transform:scaleX(1);
   transform-origin: left;
 }
@@ -53,28 +54,38 @@ h1:hover::after{
 
 
 section {
-  display:flex;
+  /* display:flex; */
   /* flex-direction: column; */
-  align-items: center;
-  justify-content: center;
-  text-align: center; 
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* text-align: center;  */
   width: 100%;
   height: 100vh;
-  /* scroll-snap-align: center; */
+  scroll-snap-align: center;
 }
 
 section h1 {
   font-size: 3rem;
-  font-family: 'Yellowtail', cursive;
+  /* font-family: 'Yellowtail', cursive; */
+  /* font-weight: lighter; */
+}
+
+section h3 {
+  font-size: 2rem;
+  font-family: 'Yellowtail', cursive; 
   font-weight: lighter;
 }
 
 section p {
-  font-size: 2rem;
+  
 }
 
 section#home {
   background: url('https://images.unsplash.com/photo-1544411047-c491e34a24e0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
+  opacity: 0.70;
+  background-attachment:fixed;
+  /* background-position: center;
+  background-size: cover; */
 }
 
 section#about {
