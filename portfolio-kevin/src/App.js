@@ -35,6 +35,7 @@ function App() {
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                         </button> */}
+                        
                     <div className= "nav-link  text-xl md:text-2xl lg:text-3xl text-white text-opacity-50"  
                         >
                         <motion.a 
@@ -62,10 +63,13 @@ function App() {
                         hover={{scale: 2}}
                         href="#contact">Contact.</motion.a>
                     </div>
-                    {/* </div> */}
-                </nav>
+                    </nav>
+
+                    <img src='https://images.unsplash.com/photo-1544411047-c491e34a24e0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80' className="city z-0 opacity-70 bg-cover bg-center h-screen w-full absolute" alt="ny"></img>
+                    
+                
                 <section id="home">
-                <div className="git-link flex text-white text-opacity-50">
+                <div className="git-link flex flex-end text-white text-opacity-50">
                 <a className=" text-2xl pr-3" href="https://github.com/KevinBurgin"><i class="icon ion-logo-github"></i></a>
                     <a className=" text-2xl pr-3" href="https://www.linkedin.com/in/kevin-burgin-683110181/"><i class="icon ion-logo-linkedin"></i></a>
                     <h3>Kevin Burgin</h3>
@@ -73,11 +77,13 @@ function App() {
                 <div className="intro">
                     <p className=" ">Hello, Im Kevin Burgin</p>
                     <h3 className=" ">A Full Stack Developer</h3>
-                    
+                  
                 </div>
-                    {/* <button onClick={() => handleClick()}>Resume</button> */}
+                <div className="shadow"></div>
                 </section>
+                
                 <section id="about">
+                
                     <h1>Hello, Im Kevin A Full Stack Developer</h1>
                     <img className="w-40 h-50 "src={Profile}></img>
                     {/* <p>I am passionate</p> */}
@@ -86,7 +92,8 @@ function App() {
                     <h1>Projects</h1>
                         <Card/> 
                         <Card/>
-                        <Card/>  
+                        <Card/>
+                          
                 </section>
                 <section id="contact" className="">
                     <h1>Contact</h1>
