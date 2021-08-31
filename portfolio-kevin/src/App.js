@@ -64,9 +64,6 @@ function App() {
                         href="#contact">Contact.</motion.a>
                     </div>
                     </nav>
-
-                    <img src='https://images.unsplash.com/photo-1544411047-c491e34a24e0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80' className="city z-0 opacity-70 bg-cover bg-center h-screen w-full absolute" alt="ny"></img>
-                    
                 
                 <section id="home">
                 <div className="git-link flex flex-end text-white text-opacity-50">
@@ -74,26 +71,28 @@ function App() {
                     <a className=" text-2xl pr-3" href="https://www.linkedin.com/in/kevin-burgin-683110181/"><i class="icon ion-logo-linkedin"></i></a>
                     <h3>Kevin Burgin</h3>
                 </div>
-                <div className="intro">
-                    <p className=" ">Hello, Im Kevin Burgin</p>
-                    <h3 className=" ">A Full Stack Developer</h3>
-                  
-                </div>
-                <div className="shadow"></div>
+                
+                {/* <div className="intro"> */}
+                    <div className="intro ">Hello, Im Kevin Burgin</div>
+                    <span className=" ">A Full Stack Developer</span>
+                   
+                {/* </div> */}
+                
                 </section>
                 
                 <section id="about">
-                
+                <div className="shadow"></div>
                     <h1>Hello, Im Kevin A Full Stack Developer</h1>
                     <img className="w-40 h-50 "src={Profile}></img>
                     {/* <p>I am passionate</p> */}
+                    
                 </section>
                 <section id="project">
                     <h1>Projects</h1>
                         <Card/> 
                         <Card/>
                         <Card/>
-                          
+                        
                 </section>
                 <section id="contact" className="">
                     <h1>Contact</h1>
