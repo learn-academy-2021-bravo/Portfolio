@@ -16,7 +16,7 @@ import { motion } from "framer-motion"
 function App() {
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
-    const closeMobileMenu = () => setClick(false);
+    // const closeMobileMenu = () => setClick(false);
 
     return(
         <>
@@ -43,47 +43,49 @@ function App() {
                         animate={{opacity: 1, x: 0 }}
                         transition={{ type: "spring", duration: 2, delay: .9}}
                         hover={{scale: 2}}
-                        href="#home" >Home.</motion.a>
+                        href="#home" >Home</motion.a>
                         <motion.a 
                         initial={{opacity: 0, x: -100}}
                         animate={{opacity: 1, x: 0 }}
                         transition={{ type: "spring", duration: 3, delay: .9}}
                         hover={{scale: 2}}
-                        href="#about">About.</motion.a>
+                        href="#about">About</motion.a>
                         <motion.a 
                         initial={{opacity: 0, x: -100}}
                         animate={{opacity: 1, x: 0 }}
                         transition={{ type: "spring", duration: 4, delay: .9}}
                         hover={{scale: 2}}
-                        href="#project">Projects.</motion.a>
+                        href="#project">Projects</motion.a>
                         <motion.a 
                         initial={{opacity: 0, x: -100}}
                         animate={{opacity: 1, x: 0 }}
                         transition={{ type: "spring", duration: 5, delay: .9}}
                         hover={{scale: 2}}
-                        href="#contact">Contact.</motion.a>
+                        href="#contact">Contact</motion.a>
                     </div>
                     </nav>
-                
-                <section id="home">
-                <div className="git-link flex flex-end text-white text-opacity-50">
+                    <div className="git-link flex flex-end text-white text-opacity-50">
                 <a className=" text-2xl pr-3" href="https://github.com/KevinBurgin"><i class="icon ion-logo-github"></i></a>
                     <a className=" text-2xl pr-3" href="https://www.linkedin.com/in/kevin-burgin-683110181/"><i class="icon ion-logo-linkedin"></i></a>
                     <h3>Kevin Burgin</h3>
                 </div>
-                
+                <section id="home">
+                    <motion.div className="intro "
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    transition={{delay:2, duration: 3}}
+                    >Hello, Im Kevin Burgin, Web Developer</motion.div>
                 {/* <div className="intro"> */}
-                    <div className="intro ">Hello, Im Kevin Burgin</div>
-                    <span className=" ">A Full Stack Developer</span>
-                   
+                    {/* <span className=" ">A Full Stack Developer</span> */}
                 {/* </div> */}
-                
                 </section>
                 
                 <section id="about">
                 <div className="shadow"></div>
-                    <h1>Hello, Im Kevin A Full Stack Developer</h1>
-                    <img className="w-40 h-50 "src={Profile}></img>
+                    <img className=" profile" src={Profile}></img>
+                    <p>Hello, I'm Kevin a full stack 
+                        <br/>developer based in San Diego</p>
+                    
                     {/* <p>I am passionate</p> */}
                     
                 </section>
