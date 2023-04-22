@@ -8,6 +8,13 @@
   background: linear-gradient(to top, #151515, transparent);
 }
 
+/* .nav-link{
+  transition: 0.5s;
+}
+
+.nav-link a{
+  transition: 0.3s;
+} */
 
 .intro {
   /* display:relative; */
@@ -25,5 +32,33 @@
   /* justify-content: center; */
   /* text-align: center;  */
 }
+
+/* .neon-text{
+  animation:flicker 2.0s infinite
+  alternate;
+  color: #fff;
+} */
+/* @keyframes flicker{
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  font-size: 6rem;
+  color:turquoise;
+  text-shadow:
+  0 0 7px #fff,
+  0 0 10px #fff,
+  0 0 21px #fff,
+  0 0 42px #0fa,
+  0 0 102px #0fa,
+  0 0 151px #0fa;
+}
+20%, 24%, 55% {       
+  text-shadow: none;
+}
+} */
+
+
+
+
+
+
  
 

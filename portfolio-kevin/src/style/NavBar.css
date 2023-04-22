@@ -6,6 +6,8 @@
     /* height: 60px; */
     /* background: rgba(0, 0, 0, 0); */
     z-index: 52;
+    /* transition: 0.9s;  */
+   
   }
   
   .nav-link {
@@ -15,6 +17,7 @@
     width: 100%;
     flex-direction: column;
     margin-top: 10rem;
+    /* transition: 0.9s;  */
   }
   
   .nav-link a{
